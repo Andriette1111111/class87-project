@@ -1,7 +1,7 @@
-var canvas= new fabric.Canvas('myCanvas')
+var canvas= new fabric.Canvas('myCanvas');
 // Create canvas variable
- block_y=1;
- block_x=1;
+ block_y=10;
+ block_x=10;
 
 block_image_width = 350;
 block_image_height = 430;
@@ -20,7 +20,7 @@ function new_image(get_image)
             left:block_x
         });
         canvas.add(block_image_object);
-    })
+    });
 }
 
 window.addEventListener("keydown", my_keydown);
@@ -33,37 +33,37 @@ console.log(keyPressed);
 	if(keyPressed == '82') // add appropriate keycode
 	{
 		// upload red ranger
-		new_image('rr1.png')
-		console.log("Red Ranger")
+		new_image('rr1.png');
+		console.log("Red Ranger");
 	}
 	if(keyPressed == '71')
 	{
-		block_x = 200;
+		
 		// upload green ranger
-		new_image('gr1.png')
-		console.log("Green Ranger")
+		new_image('gr.png');
+		console.log("Green Ranger");
 	}
 	
 	if(keyPressed == '89')
 	{
-		block_x =350;
+	
 		// upload yellow ranger
-		new_image('yr1.png')
-		console.log("Yellow Ranger")
+		new_image('yr.png');
+		console.log("Yellow Ranger");
 	}
 	if(keyPressed == '80')
 	{
-		block_x = 600;
+		
 		// upload pink ranger
-		new_image('pr1.png')
-		console.log("Pink Ranger")
+		new_image('pr.png');
+		console.log("Pink Ranger");
 	}
 	if(keyPressed == '66')
 	{
-		block_x = 700;
+		
 	// upload blue ranger
-	new_image('br1.png')
-		console.log("Blue Ranger")
+	new_image('br.png');
+		console.log("Blue Ranger");
 	}
 	
 }
